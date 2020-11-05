@@ -13,7 +13,7 @@ public class DeleteLastNode {
 	}
 
 	public static Node deleteLastNode(Node head) {
-		if(head==null)
+		if(head==null||head.next==null)
 			return null;
 		Node curr=head;
 		while(curr.next.next!=null) {
